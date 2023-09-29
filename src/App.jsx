@@ -81,6 +81,7 @@ function App() {
 
   return (
     <>
+    <h2 className="marquee ">Welcome to you </h2>
       <h1 className="bg-black text-white p-10 text-center font-bold">
         TO DO LIST
       </h1>

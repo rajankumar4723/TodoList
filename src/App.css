@@ -57,6 +57,10 @@
   background-color: rgb(19, 17, 17);
   color: #fff;
 }
+.marquee {
+  white-space: nowrap; /* Prevent text from wrapping to a new line */
+  animation: marquee 10s linear infinite; /* Adjust the duration (10s) as needed */
+}
 ul li{
   list-style: none;
   font-size: 20px;
@@ -83,3 +87,11 @@ ul li{
   text-decoration: line-through white;
 }
 
+@keyframes marquee {
+  0% {
+      transform: translateX(100%); /* Start off-screen to the right */
+  }
+  100% {
+      transform: translateX(-100%); /* Move off-screen to the left */
+  }
+}
